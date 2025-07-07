@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Simple Shopping Cart</h1>
+    <div>
+        <strong>Predefined Products:</strong>
+        <button onclick="addProduct('Apple')">Apple</button>
+        <button onclick="addProduct('Banana')">Banana</button>
+        <button onclick="addProduct('Orange')">Orange</button>
+        <button onclick="addProduct('Mango')">Mango</button>
+    </div>
+    <br>
+    <input type="text" id="productInput" placeholder="Enter product name">
+    <button onclick="addProductFromInput()">Add Product</button>
+    <h2>Cart</h2>
+    <ul id="cartList"></ul>
+    <button onclick="placeOrder()">Place Order</button>
+    <h2>Order Summary</h2>
+    <div id="orderSummaryBox"></div>
+    <style>
+        #orderSummaryBox {
+            background: #f8f8ff;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 16px;
+            margin-top: 10px;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            max-width: 400px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        #orderSummaryBox ul {
+            margin: 0 0 8px 20px;
+            padding: 0;
+        }
+        #orderSummaryBox li {
+            margin-bottom: 2px;
+        }
+        #orderSummaryBox .order-id {
+            font-weight: bold;
+            color: #4b0082;
+        }
+        #orderSummaryBox .success {
+            color: #228B22;
+            font-weight: bold;
+        }
+    </style>
+    <script src="script.js"></script>
+</body>
+</html>
