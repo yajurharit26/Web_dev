@@ -86,3 +86,4 @@ let answer = arr3.doubleArrVal(function (x) {
   return x * 2;
 });
 console.log(answer);
+ 
